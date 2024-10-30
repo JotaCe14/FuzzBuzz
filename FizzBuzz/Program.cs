@@ -9,7 +9,7 @@ internal class Program
         var inputString = Console.ReadLine();
         var intputNumber = Convert.ToInt32(inputString);
 
-        var fizzBuzzCalulator = new FizzBuzzCalculator();
+        var fizzBuzzCalulator = new FizzBuzzCalculator(new MagicNumberValidator());
 
         try
         {
@@ -19,7 +19,6 @@ internal class Program
         {
             Console.WriteLine($"Error: {ex.Message}");
         }
-
 
         Console.ReadKey();
     }
