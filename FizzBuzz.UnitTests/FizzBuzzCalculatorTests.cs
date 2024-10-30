@@ -16,4 +16,17 @@ public class FizzBuzzCalculatorTests
         //Assert
         Assert.Equal(expectedOuput, otuput);
     }
+
+    [Fact]
+    public void Calculate_Should_Return_Fizz_When_Number_Is_3()
+    {
+        //Arrange
+        var sut = new FizzBuzzCalculator();
+
+        //Act
+        string otuput = sut.Calculate(3);
+
+        //Assert
+        Assert.Equal("Fizz", otuput);
+    }
 }
